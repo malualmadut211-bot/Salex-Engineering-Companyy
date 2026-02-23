@@ -190,3 +190,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Modal functions for projects page
+window.openModal = function(title, category, location, imageSrc) {
+    const modal = document.getElementById('project-modal');
+    if (!modal) return;
+    
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-category').textContent = category;
+    document.getElementById('modal-location').textContent = location;
+    document.getElementById('modal-image').src = imageSrc;
+    
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+};
+
+window.closeModal = function() {
+    const modal = document.getElementById('project-modal');
+    if (!modal) return;
+    
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = ''; // Restore scrolling
+};
