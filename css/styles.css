@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom styles */
+.glass-panel {
+  background: rgba(17, 22, 33, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glassmorphism {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.floating-input {
+  position: relative;
+}
+
+.floating-input input, .floating-input textarea, .floating-input select {
+  width: 100%;
+  padding: 1.25rem 1rem 0.5rem;
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.floating-input label {
+  position: absolute;
+  top: 0.2rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: #64748b;
+  transition: all 0.2s;
+  pointer-events: none;
+  font-weight: 600;
+}
+
+.floating-input input:placeholder-shown ~ label,
+.floating-input textarea:placeholder-shown ~ label {
+  top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.floating-input input:focus ~ label,
+.floating-input textarea:focus ~ label,
+.floating-input select:focus ~ label,
+.floating-input input:not(:placeholder-shown) ~ label,
+.floating-input textarea:not(:placeholder-shown) ~ label {
+  top: 0.2rem;
+  font-size: 0.75rem;
+  color: #137fec;
+  font-weight: 600;
+}
+
+.floating-input input:focus, .floating-input textarea:focus, .floating-input select:focus {
+  border-color: #137fec;
+  background: #f8fafc;
+}
+
+.dark .floating-input input, .dark .floating-input textarea, .dark .floating-input select {
+  border-color: #334155;
+  color: white;
+}
+
+.dark .floating-input input:focus, .dark .floating-input textarea:focus, .dark .floating-input select:focus {
+  border-color: #137fec;
+  background: #1e293b;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.masonry-grid {
+  column-count: 1;
+  column-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+.break-inside-avoid {
+  break-inside: avoid;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

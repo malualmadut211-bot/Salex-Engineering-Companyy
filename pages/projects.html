@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salex Engineering - Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#137fec',
+                        'background-dark': '#101922',
+                        'surface-dark': '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-slate-50 dark:bg-background-dark text-slate-900 dark:text-slate-100 flex flex-col min-h-screen antialiased selection:bg-blue-500/30 selection:text-white">
+    <div id="header-placeholder"></div>
+    
+    <main class="flex-grow pt-[64px]">
+        <!-- Hero Section -->
+        <section class="relative h-[85vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-900/20 to-background-dark z-10"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-transparent z-10"></div>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBENqMDROpmnVrGVMQgLL6YSu_R3JIXjltFzeKIUEithL4B97A5eMhcItg5_4GFZrK5htZ_UAU27JmQqT3LRJI2AGpsGR4EGv8xznrF25rFd3xxk7SDJ1S-UhbOTp2ZarwapMQNKtNUYKCY2tRwym-urpMz36mqe-AExUmLlZoKgc9x5vJgvRFbueYVRhkzFne0oGy9u5x5URcwAyI532KqgSXNnpNFmslfhouVJQdLnmmoChlVp816WRzDCY31sM7wQTSa1qyyBg" alt="Modern skyscraper towering into the sky" class="w-full h-full object-cover transform scale-105 animate-[pulse_10s_ease-in-out_infinite] transition-transform duration-[20s] hover:scale-110" />
+            </div>
+            <div class="relative z-20 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full pb-10">
+                <div class="max-w-3xl animate-fade-in-up">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-500/20 border border-blue-500/30 text-blue-400 text-sm font-bold tracking-wider uppercase mb-6 backdrop-blur-md">
+                        Building Excellence
+                    </span>
+                    <h1 class="text-6xl md:text-8xl font-display font-bold tracking-tight mb-6 text-white leading-tight drop-shadow-lg">
+                        Our Construction <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Projects</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-300 max-w-xl mb-10 font-light leading-relaxed border-l-2 border-blue-500 pl-6">
+                        Explore our portfolio delivered with precision and excellence in Juba. We don't just build structures; we shape the skyline of the future.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <a href="contact.html" class="flex items-center justify-center bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-base transition-all transform hover:scale-105 shadow-xl hover:shadow-glow ring-2 ring-primary ring-offset-2 ring-offset-transparent">
+                            Request a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce text-white/50">
+                <span class="text-xs uppercase tracking-widest mb-2">Scroll</span>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="relative py-24 bg-background-dark overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-t from-primary/5 to-transparent pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-8 text-white">Our Work Speaks for Itself</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mb-10 rounded-full"></div>
+                <p class="text-slate-300 text-xl leading-relaxed font-light">
+                    We are committed to delivering <span class="text-white font-medium">engineering excellence</span>. Every project represents a fusion of technical mastery and aesthetic vision. From complex residential developments to transformative infrastructure, our portfolio is a testament to our relentless dedication to quality, safety, and innovation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section class="pb-24 bg-background-dark min-h-screen">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="masonry-grid pb-8 space-y-8">
+                    <!-- Project 1 -->
+                    <div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-2xl bg-surface-dark shadow-card cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
+                        <div class="aspect-[4/5] w-full overflow-hidden relative">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5LfC3RsAnXM0eEBF-o3ax2oRkHV6G4cBnL9lhVUycXGaUKkhBbMbtYCK-6VEzPy29_k2z6g__ZbgHAgQbW_9n1GayhGHssmALm_4biaShQo65WJ7ZdtgU39OeXeFfFr9O8nljb7yT87caS4WCBO_gew5hrBZQurCM1bb8JNtMVfLgzdBPnWI-ePTIkjbswsX46f2tXDBqGdF5Q09Non1GbHZ-b6olovbJe67UIVuJvVvxv19afYiK5BPlkxxnjUfjdu3bCKfsOQ" alt="Juba Sky Bridge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:filter group-hover:brightness-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                                <div class="self-end transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Civil Engineering</span>
+                                </div>
+                                <div class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                    <h3 class="text-3xl font-display font-bold text-white mb-2 leading-tight drop-shadow-md group-hover:text-blue-400 transition-colors">Juba Sky Bridge</h3>
+                                    <div class="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                        <div class="flex items-center text-slate-300 text-sm mb-4">
+                                            <span class="material-symbols-outlined text-base mr-1 text-blue-400">location_on</span>
+                                            Juba, South Sudan
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-2xl bg-surface-dark shadow-card cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
+                        <div class="aspect-[3/4] w-full overflow-hidden relative">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWhbZ3rDK7bpIdfw9A_e2Xot697mNV7YWiWUwauyhm0scmlch5SkkueB4gqm3_yCX9mPSNKm-5-eVojK4aeakl_FBu6PBY19wLNN6sr6ZKELSobhVEci8UQ77XMbh2KaTTr4MvkbP7dJ_cl2gw_ZsEjpQlipIIoZT_7lqqFie9GzZKOfI96do4n_TbFO1X6TZqFKeH5t9OFLQEKs3kC1JfnIyYS9r8jm38uFnWriDzlpcW2_j7C09HDH0-40XmSbcB38cTPVr4kQ" alt="Tech Tower II" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:filter group-hover:brightness-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                                <div class="self-end transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Commercial</span>
+                                </div>
+                                <div class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                    <h3 class="text-3xl font-display font-bold text-white mb-2 leading-tight drop-shadow-md group-hover:text-blue-400 transition-colors">Tech Tower II</h3>
+                                    <div class="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                        <div class="flex items-center text-slate-300 text-sm mb-4">
+                                            <span class="material-symbols-outlined text-base mr-1 text-blue-400">location_on</span>
+                                            Juba, Financial District
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-2xl bg-surface-dark shadow-card cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
+                        <div class="aspect-square w-full overflow-hidden relative">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1A0Jc4asLF9kIkCtPGy96-SxVyGRzi7eFASA2L-_2IMUtNYKJcaMdXl7RVj2bvP1kyN1EM7CeZe3qtXdgrxav54EIsq-BCXM7nKFQiCtefepv2k4xyzMo056CuMm9vV0VqwlMtTNrZw7ELFUCMsKmIm4vlJUv8RdzvLucOXeBIypbReHEaBt9TA61YYwMHpQXQTAtccgAXKyp-BG9XtjlrOmRe9cfK3Y4mczW-gF95k_HIy3dS0xfFt0026bH-FMGYJj9fOd_jg" alt="Riverview Estate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:filter group-hover:brightness-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                                <div class="self-end transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Residential</span>
+                                </div>
+                                <div class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                    <h3 class="text-3xl font-display font-bold text-white mb-2 leading-tight drop-shadow-md group-hover:text-blue-400 transition-colors">Riverview Estate</h3>
+                                    <div class="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                        <div class="flex items-center text-slate-300 text-sm mb-4">
+                                            <span class="material-symbols-outlined text-base mr-1 text-blue-400">location_on</span>
+                                            Juba, Nile Bank
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-2xl bg-surface-dark shadow-card cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
+                        <div class="aspect-[4/3] w-full overflow-hidden relative">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxpaO4mA6_bjGE1xPdjZqFGkQPE6Y6QSZYXO5TljIeKtB7t8Eqs2hAUS-CAuZG6HkqwfpU1ddKLuleq4rPgj07HuMdJ1fLrAn9aV4wIP_1s7ega_8uIBzPVO89NfqinR3Gp9GHREBR8AfeWXGnpKYR1C85SJ2mYRIzBRjEL-PnOci7YQ5TvGNOV7K-R-Q1SsWq6XUDAwdEUyLREZRb7dphqQeOxe7fmccnk7G6r-la5bwL88ZTzsn_ENut19A5oeMCzIsDmZV7QQ" alt="Nexus HQ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:filter group-hover:brightness-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                                <div class="self-end transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Commercial</span>
+                                </div>
+                                <div class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                    <h3 class="text-3xl font-display font-bold text-white mb-2 leading-tight drop-shadow-md group-hover:text-blue-400 transition-colors">Nexus HQ</h3>
+                                    <div class="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                        <div class="flex items-center text-slate-300 text-sm mb-4">
+                                            <span class="material-symbols-outlined text-base mr-1 text-blue-400">location_on</span>
+                                            Juba, Central District
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-2xl bg-surface-dark shadow-card cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
+                        <div class="aspect-[3/4] w-full overflow-hidden relative">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqA0plsSzup5OJ0gkUy7c6fmYI6LFhtJKyEKYflvtBDW-x7uJH8U9DukbHIX-wZQws3vl7WMci4kz7VOtWgbxI4SmPPVfzohT-jC8G95SvoVRkhbj8a5U4VaeJpRTtXSsIiQTWiXzy-7v7Mf5xxaSxzZaoskmkr85DX5pHP8_qFA-5n9q4N2P-SaNkuR4uULiQH4t0Ty_CZiwbq3VqWVntRxF8fPvhkNuoenTkgC10Uoo4U6jfdT5Bu3WPqBRHiCNjWZdrOgnO3g" alt="Heritage Plaza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:filter group-hover:brightness-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                                <div class="self-end transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Renovation</span>
+                                </div>
+                                <div class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                    <h3 class="text-3xl font-display font-bold text-white mb-2 leading-tight drop-shadow-md group-hover:text-blue-400 transition-colors">Heritage Plaza</h3>
+                                    <div class="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                        <div class="flex items-center text-slate-300 text-sm mb-4">
+                                            <span class="material-symbols-outlined text-base mr-1 text-blue-400">location_on</span>
+                                            Juba, Old Town
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="break-inside-avoid mb-8 group relative overflow-hidden rounded-2xl bg-surface-dark shadow-card cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
+                        <div class="aspect-[16/9] w-full overflow-hidden relative">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbsEhNrTnXULThkkg9cU9SRRZxFxncP5ODtYfj74IgGSDYXhKk7uztOYXDLqOHVyx2uCW_MaE9HLz6e2I9fX4Rwr5t2748ihoggV8XEBtlSvH5SQoFI1w1lOauy2lPf7h4FZ2Mb2LaOK7Feoz_tfsNld1eqY0spioVUJW-ip2Kl6bdo1w5fU4rCHeWdKgDDL-8bIx-vQ392OhxSCAGRBxJZmr31JYvJgiKG7YL48M24nsvDePuTlwtGE337d387X7m2XJWRctzAg" alt="Unity Dam Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:filter group-hover:brightness-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                            <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                                <div class="self-end transform translate-y-[-20px] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    <span class="bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Civil Engineering</span>
+                                </div>
+                                <div class="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                                    <h3 class="text-3xl font-display font-bold text-white mb-2 leading-tight drop-shadow-md group-hover:text-blue-400 transition-colors">Unity Dam Project</h3>
+                                    <div class="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
+                                        <div class="flex items-center text-slate-300 text-sm mb-4">
+                                            <span class="material-symbols-outlined text-base mr-1 text-blue-400">location_on</span>
+                                            White Nile
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-primary relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBENqMDROpmnVrGVMQgLL6YSu_R3JIXjltFzeKIUEithL4B97A5eMhcItg5_4GFZrK5htZ_UAU27JmQqT3LRJI2AGpsGR4EGv8xznrF25rFd3xxk7SDJ1S-UhbOTp2ZarwapMQNKtNUYKCY2tRwym-urpMz36mqe-AExUmLlZoKgc9x5vJgvRFbueYVRhkzFne0oGy9u5x5URcwAyI532KqgSXNnpNFmslfhouVJQdLnmmoChlVp816WRzDCY31sM7wQTSa1qyyBg" alt="Pattern" class="w-full h-full object-cover grayscale" />
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="text-4xl md:text-6xl font-display font-bold mb-6 text-white tracking-tight">Ready to Build the Future?</h2>
+                <p class="text-blue-100 text-xl mb-10 max-w-2xl mx-auto font-light">
+                    Let's discuss how Salex Engineering can bring your vision to life with our expertise and commitment to quality.
+                </p>
+                <div class="flex justify-center gap-6">
+                    <a href="contact.html" class="bg-white text-primary hover:bg-slate-100 px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

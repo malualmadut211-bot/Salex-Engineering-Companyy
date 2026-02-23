@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salex Engineering - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#137fec',
+                        'background-dark': '#101922',
+                        'surface-dark': '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-slate-50 dark:bg-background-dark text-slate-900 dark:text-slate-100 flex flex-col min-h-screen antialiased selection:bg-blue-500/30 selection:text-white">
+    <div id="header-placeholder"></div>
+    
+    <main class="flex-grow pt-[64px]">
+        <!-- Hero Section -->
+        <div class="w-full flex justify-center">
+            <div class="w-full max-w-[1440px] px-4 md:px-10 py-5">
+                <div class="relative rounded-2xl overflow-hidden min-h-[600px] flex flex-col justify-end p-8 md:p-16 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6k8PUM7tLIFw3svaVB_iSZiXaCLE9pPgp4nGNdBGpAG52Fwf1bdrFeiw-KXq2O8VBVAxqUS_I9FN2eTFqTRMFUzSTR1TjEqWPWJWQzmpH0MgeGLD5zPyUWPjsz60yzX-nmlmR3RsO0uweaidyCkjtJpO3baEXenauaTmnGSvkOd4wa_Q2cuwql1llbgUT1T88XgkJwttNwFaOyA_wlNb4ldu2rrqnEvVa8lOnv2-ON1t7TI1DJZw10yg9PdBMj1I_jKF3H4FDSA')">
+                    <div class="max-w-[800px] flex flex-col gap-6 animate-fade-in-up">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 w-fit">
+                            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                            <span class="text-white text-xs font-bold tracking-wide uppercase">Leading in South Sudan</span>
+                        </div>
+                        <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-display font-black leading-tight tracking-[-0.02em]">
+                            Building South Sudan’s Future with Precision
+                        </h1>
+                        <p class="text-slate-200 text-lg md:text-xl font-normal leading-relaxed max-w-[600px]">
+                            Experience strength, reliability, and professional engineering solutions tailored for your residential and commercial needs.
+                        </p>
+                        <div class="flex flex-wrap gap-4 mt-4">
+                            <a href="pages/projects.html" class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold hover:bg-blue-600 transition-colors shadow-lg shadow-primary/30">
+                                View Our Projects
+                            </a>
+                            <a href="pages/contact.html" class="flex items-center justify-center rounded-lg h-12 px-8 bg-transparent border-2 border-white text-white text-base font-bold hover:bg-white hover:text-slate-900 transition-colors">
+                                Get a Quote
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute top-8 right-8 md:bottom-16 md:top-auto md:right-16 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-2xl border border-slate-100 dark:border-slate-700 max-w-[200px] hidden sm:flex flex-col gap-2">
+                        <div class="flex gap-1 text-yellow-400">
+                            <span class="material-symbols-outlined text-sm fill-current">star</span>
+                            <span class="material-symbols-outlined text-sm fill-current">star</span>
+                            <span class="material-symbols-outlined text-sm fill-current">star</span>
+                            <span class="material-symbols-outlined text-sm fill-current">star</span>
+                            <span class="material-symbols-outlined text-sm fill-current">star</span>
+                        </div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Trusted by leading companies</p>
+                        <div class="h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary w-[95%]"></div>
+                        </div>
+                        <p class="text-2xl font-bold text-slate-900 dark:text-white">5.0 <span class="text-sm font-normal text-slate-500">Rating</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Trust Indicators -->
+        <div class="w-full flex justify-center bg-white dark:bg-background-dark py-12 border-b border-slate-100 dark:border-slate-800">
+            <div class="w-full max-w-[1280px] px-4 md:px-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="flex flex-col gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">sentiment_satisfied</span>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Client Satisfaction</p>
+                            <p class="text-slate-900 dark:text-white text-2xl font-bold">5 Stars</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">engineering</span>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Engineering Team</p>
+                            <p class="text-slate-900 dark:text-white text-2xl font-bold">Professional</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">schedule</span>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Project Delivery</p>
+                            <p class="text-slate-900 dark:text-white text-2xl font-bold">Reliable</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:border-primary/50 transition-colors group">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">handshake</span>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Local Company</p>
+                            <p class="text-slate-900 dark:text-white text-2xl font-bold">Trusted</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="w-full flex justify-center py-20 bg-slate-50 dark:bg-background-dark">
+            <div class="w-full max-w-[1280px] px-4 md:px-10">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="flex-1 relative group">
+                        <div class="absolute -inset-4 bg-primary/20 rounded-2xl rotate-3 group-hover:rotate-2 transition-transform duration-500"></div>
+                        <div class="relative rounded-xl overflow-hidden shadow-xl aspect-[4/3]">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSKOMn4C32niYHlMar6no_pgIwurQoiZQJ9O2vyWKjXRm55UK5ZuakeEkBWPXemWQmHH01SQU3AgJHt_KzeRsra_1oYM-ABWtcl6vU1CsyMkxOP2i5CmQ5wFXA50tRFzLQk0-sUZY3BDqCj3tL0ATXalQsITRhCPpfYuqH_e_SL8pdcFC0gkSl-3_nSlThltmDFO3Qpp-SKESjQq1NFmOeXv8de9O6f7x7FdqMqCDaCM4Fn6ppcydVqb88R-ZksxgY3JC5n9xffA" alt="Architects discussing blueprints on construction site" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-100 dark:border-slate-700 max-w-xs hidden md:block">
+                            <p class="text-primary font-display font-bold text-4xl mb-1">10+</p>
+                            <p class="text-slate-600 dark:text-slate-300 font-medium">Years of building excellence in the region.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-1 flex flex-col gap-6">
+                        <div class="flex flex-col gap-2">
+                            <span class="text-primary font-bold uppercase tracking-wider text-sm">About Salex</span>
+                            <h2 class="text-slate-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-display font-black leading-tight">
+                                Engineering Excellence You Can Trust
+                            </h2>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                            We deliver top-tier construction and engineering services across South Sudan, focusing on quality, safety, and timely delivery. From residential builds to large-scale infrastructure, our team ensures every project meets international standards while respecting local needs.
+                        </p>
+                        <ul class="flex flex-col gap-3 mt-2">
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-200">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span>Certified and experienced professionals</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-200">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span>Commitment to safety and quality</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-200">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span>Innovative sustainable solutions</span>
+                            </li>
+                        </ul>
+                        <a href="pages/about.html" class="mt-4 flex w-fit items-center justify-center rounded-lg h-12 px-8 bg-slate-900 dark:bg-white dark:text-slate-900 text-white text-base font-bold hover:bg-slate-700 dark:hover:bg-slate-200 transition-colors">
+                            Learn More About Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="w-full flex justify-center py-20 bg-white dark:bg-[#111418]">
+            <div class="w-full max-w-[1280px] px-4 md:px-10">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm mb-2 block">Our Expertise</span>
+                    <h2 class="text-3xl md:text-4xl font-display font-black text-slate-900 dark:text-white mb-4">Comprehensive Engineering Solutions</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Delivering a full spectrum of construction services tailored to your specific project requirements.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">domain</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Building Construction</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6">High-quality residential and commercial structures built to last generations.</p>
+                        <a href="pages/services.html" class="inline-flex items-center text-primary font-bold text-sm hover:underline">
+                            Learn more <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                        </a>
+                    </div>
+                    
+                    <div class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">add_road</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Civil Engineering</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6">Expert planning and execution of roads, bridges, and public infrastructure.</p>
+                        <a href="pages/services.html" class="inline-flex items-center text-primary font-bold text-sm hover:underline">
+                            Learn more <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                        </a>
+                    </div>
+                    
+                    <div class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">handyman</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Renovation</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6">Modernizing existing structures with precision to improve functionality and aesthetics.</p>
+                        <a href="pages/services.html" class="inline-flex items-center text-primary font-bold text-sm hover:underline">
+                            Learn more <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="w-full flex justify-center py-20 bg-slate-50 dark:bg-background-dark">
+            <div class="w-full max-w-[1280px] px-4 md:px-10">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <span class="text-primary font-bold uppercase tracking-wider text-sm mb-2 block">Our Portfolio</span>
+                        <h2 class="text-3xl md:text-4xl font-display font-black text-slate-900 dark:text-white">Recent Projects</h2>
+                    </div>
+                    <a href="pages/projects.html" class="hidden md:flex items-center gap-2 text-slate-900 dark:text-white font-bold hover:text-primary transition-colors">
+                        View All Projects <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="pages/projects.html" class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer block">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYMtDD_vocOl6-n5hTCjxSu3HRQ5Gl8tG5kw3lXCx4vZW_Bpd9_oX4lR_AOMCMOVcvJVVCBhka5eId2cCJ2MxOQ59a8qVeMNKY5mFl60cgV3Cre1dajORttvjwA1-nbYe9oabhDq0ulEuwX6OdwZsXQqFmwiL_dMPerHq0qQhzlsFAJzT_XcuBx4056WUN5vPoy5gweeb2lapJotktSZE5GolaZG_tzYLyMP4iXB7B3rlKEwLw9vkBx60zdJRbNdufdioFdNI4iA" alt="Modern glass office building facade" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Commercial</span>
+                            <h3 class="text-white text-xl font-bold">Juba Business Center</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="pages/projects.html" class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer block">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuIbveyhzD8pAG8SQVVgTa6UkugseQCwvOCORIAnXfzbfHnu-zfRCGe658D7GDAIObrssqAxEBUD6g8aKQelmw7mIl-_EDHA_KKHBUWBuyu48oJ6Eqwb4yVm__UJp6oKOTT2b4wxU0Ptevajuv3BCOz-mGs7NvVu6AxSrHrlIQ_8Naj4ixyudSmL52r0z5mCDa_rdRCX3EmHB1x5HnLl_2zL-g3QWC4mcl01Pbi6rBHBm4aELcwuC2Ypzp9hb2asGWcAvuP8OQGw" alt="Construction of a bridge over water" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Infrastructure</span>
+                            <h3 class="text-white text-xl font-bold">Nile Cross Bridge</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="pages/projects.html" class="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer block">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVV9Zoi6vhJDClVcRWQXtXUFdSENOkHWNqYEqCbhIrVGSphtV43STYyloK84rZncCO4CP3FbdfxhwxOciQ1IYqZkakxySwjoHgzFAWnSU8XjhA-7IBZVRmW4Rs0fpjFZEwze3QVJH2bH3PxeTUQ2xN96FVAb2w-dahVCAsY6r6P3lR_ZUxQiqrk8SSxCHrhLOhvKJ4DYKGH-bgznZ-QgXNiB9lnXnyMqZBT6Fj7RHgqkrC-kuFotmJYRgQT2n5XGMQRRC7s_UK4Q" alt="Modern luxury residential villa exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase tracking-wider mb-2">Residential</span>
+                            <h3 class="text-white text-xl font-bold">Riverside Villas</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex md:hidden justify-center">
+                    <a href="pages/projects.html" class="flex items-center justify-center rounded-lg h-12 px-8 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white text-base font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="w-full flex justify-center p-4 md:px-10 relative z-20 pb-20">
+            <div class="w-full max-w-[1280px] rounded-2xl bg-primary overflow-hidden relative shadow-2xl">
+                <div class="absolute inset-0 bg-blue-900/50 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
+                <div class="relative p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-display font-black text-white mb-4">Ready to Start Your Project?</h2>
+                        <p class="text-blue-100 text-lg max-w-xl">Let's build something great together. Contact us today for a consultation and free quote.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                        <a href="pages/contact.html" class="flex items-center justify-center rounded-lg h-14 px-8 bg-white text-primary text-base font-bold hover:bg-slate-100 transition-colors shadow-lg">
+                            Contact Us
+                        </a>
+                        <a href="tel:+211912345678" class="flex items-center justify-center rounded-lg h-14 px-8 bg-transparent border-2 border-white/30 text-white text-base font-bold hover:bg-white/10 transition-colors">
+                            <span class="material-symbols-outlined mr-2">call</span> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

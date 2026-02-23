@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salex Engineering - Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#137fec',
+                        'background-dark': '#101922',
+                        'surface-dark': '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-slate-50 dark:bg-background-dark text-slate-900 dark:text-slate-100 flex flex-col min-h-screen antialiased selection:bg-blue-500/30 selection:text-white">
+    <div id="header-placeholder"></div>
+    
+    <main class="flex-grow pt-[64px]">
+        <!-- Hero Section -->
+        <section class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden parallax-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZIaV1qELWp_rSCGzFzMaajb_tCHhIK8-lvT6VvpbgtEpz3ywupz-WNfgPb8_NosIz-s7N7vhlVbveI6GmzFv1q4p6xtXJRZC8tnXagoNd3t3t2_qYezBmChUIMNKJoN1RefvSZDbA3zc8vuzmV4-P81erJrz3jNgzi8xclsJSkh5GEYIhWO4y64ZdXmt8TRduM-CI_AcAZCOj4HRnP5v1_N2LjrIBqqkLFH7BpODX0UWPhw3-TWWyCtMyqr_Xf8DUdKYbhjZQzw')">
+            <div class="absolute inset-0 bg-gradient-to-b from-background-dark/90 via-background-dark/70 to-background-dark/90 z-10"></div>
+            <div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"></div>
+            <div class="relative z-20 max-w-5xl mx-auto text-center flex flex-col gap-8 items-center px-6 pt-10">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md shadow-lg">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    <span class="text-xs font-bold text-blue-100 uppercase tracking-widest">Engineering Excellence</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-extrabold text-white tracking-tight leading-[1.1] drop-shadow-2xl">
+                    What We <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Do</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-200 max-w-3xl font-light leading-relaxed drop-shadow-md">
+                    Salex Engineering Company provides professional construction and engineering services with a focus on quality, safety, and efficiency.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mt-4 w-full">
+                    <a href="contact.html" class="w-full sm:w-auto h-14 px-10 flex items-center justify-center rounded-xl bg-primary hover:bg-blue-600 text-white font-bold text-lg transition-all shadow-glow transform hover:-translate-y-1">
+                        Request a Quote
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+                <span class="material-symbols-outlined text-white/50 text-4xl">keyboard_arrow_down</span>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="relative px-6 py-24 md:py-32 w-full bg-slate-50 dark:bg-[#0f1219]">
+            <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#6b7280 1px, transparent 1px); background-size: 32px 32px;"></div>
+            <div class="max-w-[1400px] mx-auto relative z-10">
+                <div class="text-center mb-20 max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-display font-extrabold text-slate-900 dark:text-white mb-6">Premium Solutions</h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        From initial concept to final execution, we deliver world-class infrastructure through our specialized divisions.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                    <div class="group service-card bg-white rounded-2xl p-10 border border-slate-100 dark:border-slate-800 shadow-card hover:bg-blue-50/50 hover:border-blue-200 hover:shadow-card-hover dark:hover:bg-surface-dark dark:hover:border-primary/30 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:-translate-y-2">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/10 transition-colors"></div>
+                        <div class="mb-8 w-20 h-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary dark:text-blue-400 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[40px]">construction</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-primary transition-colors">Construction Services</h3>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-8">
+                            We deliver high-quality commercial and residential construction projects with precision, adhering to strict timelines and safety protocols.
+                        </p>
+                    </div>
+                    
+                    <div class="group service-card bg-white rounded-2xl p-10 border border-slate-100 dark:border-slate-800 shadow-card hover:bg-blue-50/50 hover:border-blue-200 hover:shadow-card-hover dark:hover:bg-surface-dark dark:hover:border-primary/30 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:-translate-y-2">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/10 transition-colors"></div>
+                        <div class="mb-8 w-20 h-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary dark:text-blue-400 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[40px]">architecture</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-primary transition-colors">Engineering Services</h3>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-8">
+                            Our engineering division provides innovative structural and civil designs, utilizing advanced modeling to ensure durability and functionality.
+                        </p>
+                    </div>
+                    
+                    <div class="group service-card bg-white rounded-2xl p-10 border border-slate-100 dark:border-slate-800 shadow-card hover:bg-blue-50/50 hover:border-blue-200 hover:shadow-card-hover dark:hover:bg-surface-dark dark:hover:border-primary/30 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:-translate-y-2">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/10 transition-colors"></div>
+                        <div class="mb-8 w-20 h-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary dark:text-blue-400 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[40px]">format_paint</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-primary transition-colors">Renovation</h3>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-8">
+                            Transform existing structures with our expert renovation services, focusing on modern aesthetics, energy efficiency, and spatial optimization.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[960px] mx-auto">
+                    <div class="group service-card bg-white rounded-2xl p-10 border border-slate-100 dark:border-slate-800 shadow-card hover:bg-blue-50/50 hover:border-blue-200 hover:shadow-card-hover dark:hover:bg-surface-dark dark:hover:border-primary/30 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:-translate-y-2">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/10 transition-colors"></div>
+                        <div class="mb-8 w-20 h-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary dark:text-blue-400 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[40px]">assignment_turned_in</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-primary transition-colors">Project Management</h3>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-8">
+                            End-to-end project oversight ensuring your vision is realized on time and within budget, with rigorous quality control and risk management.
+                        </p>
+                    </div>
+                    
+                    <div class="group service-card bg-white rounded-2xl p-10 border border-slate-100 dark:border-slate-800 shadow-card hover:bg-blue-50/50 hover:border-blue-200 hover:shadow-card-hover dark:hover:bg-surface-dark dark:hover:border-primary/30 flex flex-col h-full relative overflow-hidden transition-all duration-300 hover:-translate-y-2">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/10 transition-colors"></div>
+                        <div class="mb-8 w-20 h-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary dark:text-blue-400 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+                            <span class="material-symbols-outlined text-[40px]">diversity_3</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-primary transition-colors">Consultancy</h3>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-8">
+                            Strategic advice and technical expertise to help you navigate complex regulatory environments and optimize your construction investments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="px-6 py-24 bg-white dark:bg-[#0B0F19]">
+            <div class="max-w-[1400px] mx-auto rounded-3xl bg-primary relative overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-blue-900 mix-blend-multiply opacity-80 z-10"></div>
+                <div class="absolute inset-0 z-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZIaV1qELWp_rSCGzFzMaajb_tCHhIK8-lvT6VvpbgtEpz3ywupz-WNfgPb8_NosIz-s7N7vhlVbveI6GmzFv1q4p6xtXJRZC8tnXagoNd3t3t2_qYezBmChUIMNKJoN1RefvSZDbA3zc8vuzmV4-P81erJrz3jNgzi8xclsJSkh5GEYIhWO4y64ZdXmt8TRduM-CI_AcAZCOj4HRnP5v1_N2LjrIBqqkLFH7BpODX0UWPhw3-TWWyCtMyqr_Xf8DUdKYbhjZQzw'); background-size: cover; background-position: center;"></div>
+                <div class="relative z-20 p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
+                    <div class="max-w-2xl">
+                        <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white mb-6 leading-tight">Ready to build the future?</h2>
+                        <p class="text-blue-100 text-xl font-light">Partner with Salex Engineering for world-class solutions that stand the test of time.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                        <a href="contact.html" class="bg-white text-primary hover:bg-slate-100 px-10 py-5 rounded-xl font-bold text-lg transition-transform hover:-translate-y-1 shadow-xl flex items-center justify-center">
+                            Schedule Consultation
+                        </a>
+                    </div>
+                </div>
+                <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-3xl z-10"></div>
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl z-10"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
